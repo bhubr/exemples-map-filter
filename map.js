@@ -13,3 +13,5 @@ const personsLastNames = persons.map(person => {
 });
 console.log(personsLastNames);
 
+const namesAndPosition = persons.map((person, index) => `${index} ${person}`);
+console.log(namesAndPosition);
