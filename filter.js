@@ -3,18 +3,15 @@
 const numbers = [-4, 0, 5, -2, 9, 12];
 
 function isPositive(number) {
-  if (number >= 0) return true;
-  else return false;
+  return number >= 0;
 }
 
 function isPositiveAndEven(number) {
-  const isEven = number % 2 === 0;
-  if (number >= 0 && isEven) return true;
-  else return false;
+  return number >= 0 && number % 2 === 0;
 }
 
 const positiveNumbers = numbers.filter(isPositive);
 console.log(positiveNumbers);
 
-const positiveEvenNumbers = numbers.filter(isPositiveAndEven);
+const positiveEvenNumbers = numbers.filter(number => number >= 0 && number % 2 === 0);
 console.log(positiveEvenNumbers);
